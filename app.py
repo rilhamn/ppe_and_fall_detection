@@ -13,8 +13,8 @@ st.title("PPE + Fall Monitoring Demo")
 # --------------------------------------------------
 @st.cache_resource
 def load_models():
-    ppe = YOLO("runs/detect/train/weights/best.pt")
-    fall = YOLO("runs/detect/fall/weights/best.pt")
+    ppe = YOLO("model/ppe_best.pt")
+    fall = YOLO("model/fall_best.pt")
     return ppe, fall
 
 ppe_model, fall_model = load_models()
