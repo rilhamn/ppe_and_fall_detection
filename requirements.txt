@@ -10,3 +10,5 @@ pandas
 numpy
 av
 pyyaml
+ultralytics
+
